@@ -125,72 +125,72 @@ MIN_REPLAY_SIZE = 1000
 
 ## Here is the basic structure of my project code:
 
-CLASSES:
-
-  class DQN
-  
-  class ReplayBuﬀer
-
-CONSTANTS/HYPERPARAMETERS:
-
-  batch size,
-  
-  gamma,
-  
-  epsilon,
-  
-  number of episodes,
-  
-  target update rate,
-  
-  etc.
-
-FUNCTIONS:
-  
-  def select_action
-  
-  def preprocess
-  
-  def plot_durations
-  
-  def plot_rewards
-  
-  def optimize_model
-
-TRAINING LOOP:
-  
-  set up environment
-  
-  initialize replay memory
-  
-  set up Q-network
-  
-  set up target network
-  
-  define optimizer
-  
-    for episodes:
+    CLASSES:
     
-      get initial state
+      class DQN
       
-      repeat:
+      class ReplayBuﬀer
+    
+    CONSTANTS/HYPERPARAMETERS:
+    
+      batch size,
       
-        select action based on state’s Q-value
+      gamma,
+      
+      epsilon,
+      
+      number of episodes,
+      
+      target update rate,
+      
+      etc.
+    
+    FUNCTIONS:
+      
+      def select_action
+      
+      def preprocess
+      
+      def plot_durations
+      
+      def plot_rewards
+      
+      def optimize_model
+    
+    TRAINING LOOP:
+      
+      set up environment
+      
+      initialize replay memory
+      
+      set up Q-network
+      
+      set up target network
+      
+      define optimizer
+      
+        for episodes:
         
-        execute action in simulation
-        observe
-        
-        update rewards
-        
-        store transition to replay memory
-        
-        move to next state
-        
-        optimize Q-network
-        
-        update target network by update rate
-        
-        if episode done, break
+          get initial state
+          
+          repeat:
+          
+            select action based on state’s Q-value
+            
+            execute action in simulation
+            observe
+            
+            update rewards
+            
+            store transition to replay memory
+            
+            move to next state
+            
+            optimize Q-network
+            
+            update target network by update rate
+            
+            if episode done, break
 
 
 ## Intelligence:
