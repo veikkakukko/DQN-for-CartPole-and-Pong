@@ -5,8 +5,8 @@ This is a coursework on the Artificial Intelligence course at the School of Comp
 
 ## Attachments:
 
-- [Python notebook including the code for Pong DQN](src/DQN_Pong-4.ipynb)
-- [State dictionary of the trained network weights](src/pong_dqn-4.pth)
+- [Python notebook including the code for Pong DQN](DQN_Pong-4.ipynb)
+- [State dictionary of the trained network weights](pong_dqn-4.pth)
 
 ## Problem description:
 
