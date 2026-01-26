@@ -3,6 +3,11 @@ Reinforcement learning: CartPole and Pong with a DQN network
 
 This is a coursework on the Artificial Intelligence course at the School of Computing at UEF. This document contains the report of the project.
 
+## Attachments:
+
+- [Python notebook including the code for Pong DQN](DQN-for-CartPole-and-Pong/DQN_Pong-4.ipynb)
+- [State dictionary of the trained network weights](DQN-for-CartPole-and-Pong/pong_dqn-4.pth)
+
 ## Problem description:
 
 The problem is to get an AI agent to learn to play games like CartPole and Pong with
