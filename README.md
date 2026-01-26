@@ -164,8 +164,7 @@ attachment to the report.
 ## Quotations:
 
 The DQN paper:
-**https://www.datascienceassn.org/sites/default/files/Human-level%20Control
-%20Through%20Deep%20Reinforcement%20Learning.pdf**
+**https://www.datascienceassn.org/sites/default/files/Human-level%20Control%20Through%20Deep%20Reinforcement%20Learning.pdf**
 
 PyTorch DQN Tutorial:
 **https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html**
