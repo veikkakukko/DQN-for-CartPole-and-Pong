@@ -3,7 +3,7 @@ Reinforcement learning: CartPole and Pong with a DQN network
 
 This is a coursework on the Artificial Intelligence course at the School of Computing at UEF. This document contains the report of the project.
 
-##Problem description:##
+## Problem description:
 
 The problem is to get an AI agent to learn to play games like CartPole and Pong with
 reinforcement learning. The idea is to make the agent learn the best actions in every state based
@@ -13,7 +13,7 @@ dimensional input (raw pixels in Pong) is heavy to handle and there’s a long d
 has to use neural networks, but their instability can make training frustrating.
 
 
-##Approach to Solution:##
+## Approach to Solution:
 This project work's assignment is based on the original Deep Q Learning paper by Google
 DeepMind. The paper includes a pseudo code algorithm that is well explained in the paper. I
 used that as a base to start building my own version of a DQN agent. The main idea of the
@@ -26,7 +26,7 @@ and then the network weights are copied to a target network that can be used for
 and to stabilize learning.
 
 
-##Implementation:##
+## Implementation:
 The DQN paper, where the idea of reinforcement learning with a neural network was
 introduced, seemed very complicated to me at first. I had to read it many times to understand
 the basic algorithm. I also asked ChatGPT to explain me some details and I watched a lot of
@@ -62,7 +62,7 @@ training episodes.
 Separate analysis with learning curves and hyper-parameters of CartPole and Pong can be found in the next parts. Structure of my project is presented after them.
 
 
-##Analysis of learning CartPole##
+## Analysis of learning CartPole
 I may have had an overfitting problem with CartPole. A few training sessions had a curve that reached
 episode durations of 500 for a while (the point where the agent balances the pole perfectly), but then
 came down to around one hundred or even below that. I tried changing the learning rate, epsilon decay
@@ -84,7 +84,7 @@ TAU = 0.005 # TARGET NETWORK GETS UPDATED EVERY 200 STEPS
 MIN_REPLAY_SIZE = 1000
 
 
-##Analysis of learning Pong:##
+## Analysis of learning Pong:
 The training for Pong with 5000 episodes took 9 hours. The learning curve reached very good values in
 a few hundred episodes and seemed to stay roughly on that level since. The reward from a single
 episode is determined by the diﬀerence in the game score. Reaching 21 means that the agent played a
@@ -108,7 +108,7 @@ TARGET_UPDATE = 1000 # TARGET NETWORK UPDATE RATE
 MIN_REPLAY_SIZE = 1000
 
 
-##Here is the basic structure of my project code:##
+## Here is the basic structure of my project code:
 
 CLASSES:
   class DQN
@@ -149,7 +149,7 @@ TRAINING LOOP:
         if episode done, break
 
 
-##Intelligence:##
+## Intelligence:
 Depending on the definition of intelligence, my agent is in some ways intelligent and in a lot of
 ways not. The agent masters Pong with a few hours of training, but everything is based on
 calculations and the model is essentially just a computer program. It seems like the agent is very
@@ -161,7 +161,7 @@ so there is a big diﬀerence. A recording of one of the perfect games will be s
 attachment to the report.
 
 
-##Quotations:##
+## Quotations:
 
 The DQN paper:
 **https://www.datascienceassn.org/sites/default/files/Human-level%20Control
