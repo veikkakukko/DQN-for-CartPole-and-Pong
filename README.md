@@ -74,13 +74,21 @@ least the algorithm worked somehow.
 <img width="1114" height="878" alt="image" src="https://github.com/user-attachments/assets/98d7f732-1d57-4e60-afd4-eec9f220ad6b" />
 
 My hyper-parameters used for CartPole:
+
 BATCH SIZE = 128
+
 GAMMA = 0.99
+
 EPSILON_START = 0.95 # DECAYING EPSILON 0.95 -> 0.05 WITH 2500 STEPS
+
 EPSILON_END = 0.05
+
 EPSILON_DECAY = 2500
+
 NUM_EPISODES = 500
+
 TAU = 0.005 # TARGET NETWORK GETS UPDATED EVERY 200 STEPS
+
 MIN_REPLAY_SIZE = 1000
 
 
@@ -99,53 +107,89 @@ perfect games of 21-0, which means that it really had mastered Pong.
 My hyper-parameters used for Pong:
 
 BATCH_SIZE = 128
+
 GAMMA = 0.99
+
 EPSILON_START = 0.95 # DECAYING EPSILON 0.95 -> 0.05 WITH 100000 STEPS
+
 EPSILON_END = 0.05
+
 EPSILON_DECAY = 100000
+
 NUM_EPISODES = 5000 # TOTAL EPISODES
+
 TARGET_UPDATE = 1000 # TARGET NETWORK UPDATE RATE
+
 MIN_REPLAY_SIZE = 1000
 
 
 ## Here is the basic structure of my project code:
 
 CLASSES:
+
   class DQN
+  
   class ReplayBuﬀer
 
 CONSTANTS/HYPERPARAMETERS:
+
   batch size,
+  
   gamma,
+  
   epsilon,
+  
   number of episodes,
+  
   target update rate,
+  
   etc.
 
 FUNCTIONS:
+  
   def select_action
+  
   def preprocess
+  
   def plot_durations
+  
   def plot_rewards
+  
   def optimize_model
 
 TRAINING LOOP:
+  
   set up environment
+  
   initialize replay memory
+  
   set up Q-network
+  
   set up target network
+  
   define optimizer
+  
     for episodes:
+    
       get initial state
+      
       repeat:
+      
         select action based on state’s Q-value
+        
         execute action in simulation
         observe
+        
         update rewards
+        
         store transition to replay memory
+        
         move to next state
+        
         optimize Q-network
+        
         update target network by update rate
+        
         if episode done, break
 
 
