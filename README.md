@@ -5,7 +5,9 @@ This is a coursework on the Artificial Intelligence course at the School of Comp
 
 ## Trained agent playing a perfect game of Pong:
 
-<video src="dqn-pong-episode-0.mp4" width="320" height="240" controls></video>
+https://github.com/user-attachments/assets/2c2c29ab-177a-4137-9f3b-3a31391f0dc5
+
+
 
 ## Attachments:
 
