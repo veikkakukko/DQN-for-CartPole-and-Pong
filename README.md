@@ -3,6 +3,10 @@ Reinforcement learning: CartPole and Pong with a DQN network
 
 This is a coursework on the Artificial Intelligence course at the School of Computing at UEF. This document contains the report of the project.
 
+## Trained agent playing a perfect game of Pong:
+
+<video src="dqn-pong-episode-0.mp4" width="320" height="240" controls></video>
+
 ## Attachments:
 
 - [Python notebook including the code for Pong DQN](DQN_Pong-4.ipynb)
